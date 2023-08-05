@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      .bg-primary{
+        background: #5614B0;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #DBD65C, #5614B0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #DBD65C, #5614B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .card{
+        margin: 40px auto;
+        width: 400px;
+        height: 400px;
+      }
+      .form-control{
+        margin-top: 10px;
+      }
+      .btn{
+        margin-top: 10px;
+      }
+
+    </style>
+  </head>
+  <body class="bg-primary mb-lg-2 ">
+    <main class="card">
+      <h2 class="display-4 text-decoration-underline">
+        Registration Form
+      </h2>
+     <form class="form-control">
+      <div class="row ">
+        <div class="col">
+          <label for="fname" class="form-label">First Name</label>
+          <input type="text" id="fname" class="form-control" class="first-name">
+        </div>
+        <div class="col">
+          <label for="lname" class="form-label">Last Name</label>
+          <input type="text" id="lname"  name="first-name" class="form-control">
+        </div>
+      </div>
+      <div class="row mt-8">
+        <div class="col">
+          <label for="birth-dob" class="form-label">Birthday</label>
+          <input type="date" id="birth-dob" name="date-of-birth" class="form-control"> 
+        </div>
+        <div class="col mt-8">
+          <div class="col">
+            <label class="form-check-label pb-4" for="radio1">Gender</label>
+            <div class="form-check">
+              <input type="radio" id="radio1" class="form-check-input" name="gender" value="male">
+              <label class="form-check-label" for="radio1">Male</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="radio1" class="form-check-input" name="gender" value="female">
+              <label class="form-check-label" for="radio1">Female</label>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="Email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" name="Email"  class="first-name">
+        </div>
+        <div class="col">
+          <label for="PhoneNumber" class="form-label">Phone Number</label>
+          <input type="text" id="lname"  name="phone-number" class="form-control">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="options">Subject:</label>
+        <select class="form-select">Subject 
+          <option value=""> Computer Organisation</option>
+          <option value="">Python</option>
+          <option value="">Web Stack Development</option>
+          <option value="">Advance database</option>
+        </select>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>      
+     </form>
+    </main>
+   <script src="
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+   </script>
+  </body>
+</html>

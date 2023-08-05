@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-family: Jost, sans-serif;
+}
+h1,h2{
+    line-height: 1.2;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    left: 0;
+    font: 18.76px Jost sans-serif;
+    width: 100%;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+a{
+    text-decoration: none;
+    color: #333
+}
+.navbar li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width 0.3s; /* Add the transition effect on width property */
+}
+.navbar a{
+    transition: opacity 0.3s ease; 
+}
+.navbar a:hover {
+    border-bottom: 2px solid blue;
+    opacity: 0.7;
+}
+/* Animation for the active link's underline */
+.navbar li.active a::after {
+    width: 100%; /* Show the underline on active link */
+}
+.home__title{
+    font-size: 7rem;
+    color: #333333;
+    font-family: Jost, sans-serif;
+    /* font: 80px Jost sans-serif; */
+    margin-bottom: 2.5rem;
+}
+.nav__logo{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+nav{
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+nav li{
+    display: inline;
+    margin-right: 15px;
+}
+.flex{
+    height: 8vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main-container{
+    height: 60vh;
+    margin-top: 134px;
+}
+.main-heading{
+    width: 66%;
+    margin: auto;
+}
+p {
+    margin: 10px 0;
+    line-height: 32px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    /* color: #29b4f5; */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 12px auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    background-color: white; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-4px);
+}
+
+.content{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    margin-top: 200px;
+    width: 66%;
+    padding: 12px;
+    margin: 204px auto;
+}
+.section-title-lead{
+    color: #707070;
+    margin: 10px 10px;
+    font-size: 12px;
+    font-family: Jost sans-serif;
+    width: 100%;
+    margin: 12px auto;
+}
+.section-title{
+    position: relative;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+    
+    letter-spacing: 1px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    margin: auto;
+}
+.flex-container div{
+    width: 66%;
+    flex-grow: 1;
+    margin: 12px auto;
+}
+
+.logo-skill {
+    display: flex; /* Use flexbox to place them in a row */
+}
+  
+.logo-skill ul {
+    list-style: none; /* Remove bullet points from the list items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+  
+.logo-skill li {
+    display: inline-block; /* Display the list items in a row */
+    margin-right: 20px; /* Add some spacing between the items */
+}
+  
+.logo-skill img {
+    width: 75px; /* Adjust the width of the logo image as needed */
+}
+.logo-skill p{
+    text-align: center;
+}  
+/* Portfolio Section */
+.portfolio{
+    margin-top: 200px;
+}
+.third-heading{
+    width: 66%;
+    margin: 12px auto;
+}
+.my-work{
+    width: 60%;
+    margin: 12px auto;
+}
+
+/* Carousel */
+#carouselExampleCaptions {
+    width: 60%;
+    margin: 12px auto;
+}
+
+/* Adjust image size within the carousel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin-top: 48px;
+    font-size: 12px;
+}
